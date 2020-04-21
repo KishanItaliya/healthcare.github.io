@@ -1,0 +1,724 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+
+a{text-decoration: none;}
+
+a:hover{text-decoration: none;}
+
+li{list-style: none;}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.extra-div h2 , .servicediv h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url(../images/header-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%,100% 85%,50% 100%,0 85%,0 0);
+    position: relative;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%,#16c9f6 100%);
+}
+
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%,#16c9f6 100%);
+}
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.dropdown-menu a 
+{
+    color: black!important;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header-button a
+{
+    border: 1px solid;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-button a:hover
+{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+    font-size: 0.9rem;
+    color: white;
+}
+
+/**************** Extra div class css start ****************/
+
+.header-extradiv
+{
+    width: 100%;
+    height: 80vh;
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.extra-div
+{
+    background: #fff;
+    border: medium ;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.extra-div:hover
+{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform:translateY(-20px);
+}
+
+.extra-heading h3{
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px 0px 0px 0px;
+    font-weight: 600;
+}
+
+/**************** Extra div class css end ****************/
+
+/**************** service offer css start ****************/
+
+.serviceoffers{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    height: 0.8rem!important;
+    margin-bottom:  25px!important;
+    background: #606060;
+}
+
+i{
+    color: #2fccd0;
+}
+
+/**************** service offer css end ****************/
+
+/**************** counter start ****************/
+
+.project-work{
+    margin-top: 100px;
+    background: #16c9f6;
+    margin-bottom: 100px;
+} 
+
+.project-work h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.heading p{
+    font-size: 1.5rem;
+}
+
+.text p{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+
+/**************** counter end ****************/
+
+/**************** pricing css start ****************/
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card{
+    transition: 0.4s ease;
+}
+
+.card-body a img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: white!important;
+    padding: 15px 0px!important;
+    
+}
+
+.card-body{
+    padding: 30px 0px!important;
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer{
+    background: white!important;
+    padding: 25px 0px!important;
+}
+
+.card-footer a
+{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card:hover .card-footer a
+{
+    color: #fff;
+    background: #50d1c0;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover .card-header, .card:hover .money{
+    color: #50d1c0;
+}
+
+.card:hover img{
+    border-color: #50d1c0;
+}
+
+.card-center{
+    transform: translateY(-20px);
+}
+
+
+/**************** pricing css end ****************/
+
+/**************** customer feedback start ****************/
+
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    background: #16c9f6;
+}
+
+.box:hover h1{
+    color: white;
+}
+
+.box:hover p{
+    color: white;
+}
+
+.box:hover h2{
+    color: white;
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box a:after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    color: white;
+    position: absolute;
+    top: 290%;
+    left: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.box h2{
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+/**************** customer feedback end ****************/
+
+/**************** contact us start ****************/
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactus i{
+    color: yellow;
+}
+
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg ,#16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+.form-button button{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    border: none;
+}
+
+::placeholder{
+    font-size: 0.85rem;
+}
+
+/**************** contact us end ****************/
+
+
+/**************** newsletter start ****************/
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news-input{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+    height: 45px!important;
+}
+
+.input-group-text{
+    color: #fff;
+    background: #5bc0de;
+    border-radius: 0px 100px 100px 0px!important;
+    min-width: 130px;
+    min-height: 45px;
+    height: 45px!important;
+    border: none;
+}
+
+/**************** newsletter end ****************/
+
+
+/**************** footer start ****************/
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #00abff;
+    position: relative;
+}
+
+.footersection p{
+    color: #fff;
+}
+
+.footersection i{
+    color: #fff;
+}
+
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+#myBtn{
+    /*display: none;*/
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+    background: #606060;
+
+}
+
+/**************** footer end ****************/
+
+/**************** about-us ******************/
+
+
+#about-us{
+    height: 100vh;
+}
+
+.welcome_docmed_area {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+
+.welcome_docmed_area .welcome_thumb {
+    position: relative;
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_1 {
+    left: 0;
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_1 img {
+    width: 60%;
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_2 {
+    position: absolute;
+    bottom: -94px;
+    right: -37px;
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_2 img {
+    width: 89%;
+}
+
+.welcome_docmed_area .welcome_docmed_info {
+    padding-left: 90px;
+}
+
+.welcome_docmed_area .welcome_docmed_info h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F1F1F;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 9;
+    padding-bottom: 9px;
+}
+
+.welcome_docmed_area .welcome_docmed_info h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #5DB2FF;
+}
+
+.welcome_docmed_area .welcome_docmed_info h3 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+.about-button a
+{
+    border: 1px solid;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 12px 35px;
+    outline: none;
+    background-color:  #16c9f6;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.about-button a:hover
+{
+    background: #fff;
+    color: #16c9f6;
+    border-color: #16c9f6;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+
+/**************** media queries *************/
+
+@media(max-width: 768px){
+    .nav-item{
+        text-align: center!important;
+    }
+    .pricing, .happyclients, .contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+    .card-center{
+        transform: translateY(0px);
+        margin: 40px 0;
+    }
+    .contactus p{
+        padding: 0 50px;
+    }
+    .footerdiv:nth-child(2){
+        text-align: left!important;
+    }
+    .footerdiv{
+        margin: 30px 0;
+    }
+    .welcome_docmed_area {
+        padding-bottom: 100px;
+        height: auto;
+        margin-top: 500px;
+    }
+    .welcome_docmed_area .welcome_thumb .thumb_1 img {
+        width: 100%;
+    }
+    .welcome_docmed_area .welcome_thumb .thumb_2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    .welcome_docmed_area .welcome_docmed_info {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+    .welcome_docmed_area .welcome_docmed_info h3 {
+        font-size: 30px;
+    }
+    .welcome_docmed_area .welcome_docmed_info h3 br {
+        display: none;
+    }
+}
+
+.modal-body, .modal-header, .modal-footer{
+    background: linear-gradient(to right, #2a7bd8 0%, #51dfce 0%,#16c9f6 100%);
+}
+
+.form-group label{
+    font-weight: 600;
+}
+
+.login-button a
+{
+    border: 1px solid;
+    border-radius: 100px;
+    margin: 0px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: #fff;
+}
+
+.login-button a:hover
+{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
