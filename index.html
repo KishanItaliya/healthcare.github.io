@@ -350,7 +350,7 @@
                             Good Health</h3>
                     <p>As Healthcare Hospital, there are very well-equipped facilities and expert doctors. These hospitals are considered the best places for effective treatment.The doctors and nurses do their work with a dedication and maintains the pleasant atmosphere of the hospital so that the patients feel comfortable and better.</p>
                     <div class="about-button">
-                      <a class="btn " href="#">Make an appoinment </a>
+                      <a class="btn " href="#" data-toggle="modal" data-target="#myModal">Make an appoinment </a>
                   </div>
                 </div>
             </div>
